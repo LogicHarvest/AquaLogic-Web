@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redclaw Crayfish Capacity Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #result {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Redclaw Crayfish Capacity Calculator</h1>
+    
+    <label for="damSize">Dam Size (square meters): </label>
+    <input type="number" id="damSize" step="any" required><br>
+
+    <label for="depth">Depth (meters): </label>
+    <input type="number" id="depth" step="any" required><br>
+
+    <button onclick="calculateCapacity()">Calculate Capacity</button>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateCapacity() {
+            var damSize = parseFloat(document.getElementById('damSize').value);
+            var depth = parseFloat(document.getElementById('depth').value);
+
+            var spacePerCrayfish = 0.1;
+            var depthFactor = 2;
+
+            var totalSpace = damSize * depth * depthFactor;
+            var capacity = Math.floor(totalSpace / spacePerCrayfish);
+
+            var resultElement = document.getElementById('result');
+            resultElement.innerHTML = '<p>Estimated Redclaw Crayfish Capacity: ' + capacity + ' crayfish</p>';
+        }
+    </script>
+</body>
+</html>
