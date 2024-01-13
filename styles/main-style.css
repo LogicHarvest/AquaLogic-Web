@@ -1,8 +1,42 @@
+@import url('https://raw.githubusercontent.com/LogicHarvest/LogicHarvest/main/styles/main-style.css');
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
+h1 {
+    color: var(--dark-grey);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--dark-reddish-brown);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--olive-green);
+}
+
 #result {
     margin-top: 20px;
+    padding: 10px;
+    border: 1px solid var(--light-grey);
+    background-color: var(--light-blue-grey);
 }
