@@ -5,7 +5,7 @@ fetch('fish-data.json')
     .then(data => {
         fishData = data;
     })
-    .catch(error => console.error('Error fetching and parsing crayfish data:', error));
+    .catch(error => console.error('Error fetching and parsing fish data:', error));
 
 function calculateCapacity(fishType) {
     var damSize = parseFloat(document.getElementById('damSize').value);
@@ -26,7 +26,7 @@ function calculateCapacity(fishType) {
 
         var resultElement = document.getElementById('result');
         resultElement.innerHTML = `
-            <p>Estimated ${biologicalName} Capacity: ${capacity} crayfish</p>
+            <p>Estimated ${biologicalName} Capacity: ${capacity} fish</p>
             <p>Average Size: ${averageSize}</p>
             <p>Temperature Range: ${temperatureRange}</p>
             <p>Water pH Range: ${waterpHRange}</p>
@@ -35,4 +35,3 @@ function calculateCapacity(fishType) {
         console.error(`Fish type "${fishType}" not found in the data.`);
     }
 }
-
