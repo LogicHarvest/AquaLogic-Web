@@ -24,6 +24,78 @@
     "averageSize": "Large",
     "temperatureRange": "25-30°C",
     "waterpHRange": "6.5-7.5"
+  },
+
+  "yellow-perch": {
+    "spacePerUnit": 0.07,
+    "depthFactor": 1.7,
+    "biologicalName": "Perca flavescens",
+    "averageSize": "Medium",
+    "temperatureRange": "10-24°C",
+    "waterPRange": "6.0-8.0"
+  },
+
+  "walleyes": {
+    "spacePerUnit": 0.09,
+    "depthFactor": 1.7,
+    "biologicalName": "Sander vitreus",
+    "averageSize": "Medium to large",
+    "temperatureRange": "4-22°C",
+    "waterpHRange": "6.5-8.0"
+  },
+
+  "trout": {
+    "spacePerUnit": 0.06,
+    "depthFactor": 1.6,
+    "biologicalName": "Salmo trutta",
+    "averageSize": "Medium",
+    "temperatureRange": "10-18°C",
+    "waterpHRange": "6.0-7.5"
+  },
+
+  "largemouth-bass": {
+    "spacePerUnit": 0.11,
+    "depthFactor": 2.1,
+    "biologicalName": "Micropterus salmoides",
+    "averageSize": "Large",
+    "temperatureRange": "15-30°C",
+    "waterpHRange": "6.0-8.0"
+  },
+
+  "koi-carp": {
+    "spacePerUnit": 0.07,
+    "depthFactor": 1.9,
+    "biologicalName": "Cyprinus carpio",
+    "averageSize": "Medium to large",
+    "temperatureRange": "15-25°C",
+    "waterpHRange": "7.0-8.5"
+  },
+
+  "shiners": {
+    "spacePerUnit": 0.04,
+    "depthFactor": 1.4,
+    "biologicalName": "Notemigonus crysoleucas",
+    "averageSize": "Small to medium",
+    "temperatureRange": "10-25°C",
+    "waterpHRange": "6.5-8.0"
+  },
+
+  "bluegills": {
+    "spacePerUnit": 0.05,
+    "depthFactor": 1.5,
+    "biologicalName": "Lepomis macrochirus",
+    "averageSize": "Small to medium",
+    "temperatureRange": "20-30°C",
+    "waterpHRange": "6.0-8.0"
+  },
+
+  "sunfish": {
+    "spacePerUnit": 0.04,
+    "depthFactor": 1.3,
+    "biologicalName": "Centrarchidae",
+    "averageSize": "Small to medium",
+    "temperatureRange": "15-30°C",
+    "waterpHRange": "6.5-8.5"
   }
 }
 
