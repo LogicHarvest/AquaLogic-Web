@@ -1,4 +1,4 @@
-@import url('https://raw.githubusercontent.com/LogicHarvest/LogicHarvest/main/styles/main-style.css');
+
 
 body {
     font-family: Arial, sans-serif;
@@ -6,7 +6,7 @@ body {
 }
 
 h1 {
-    color: var(--dark-grey);
+    color: #333;
 }
 
 label {
@@ -14,7 +14,13 @@ label {
     margin-bottom: 8px;
 }
 
-input,
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
 select {
     width: 100%;
     padding: 8px;
@@ -23,7 +29,7 @@ select {
 }
 
 button {
-    background-color: var(--dark-reddish-brown);
+    background-color: #4caf50;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -31,12 +37,12 @@ button {
 }
 
 button:hover {
-    background-color: var(--olive-green);
+    background-color: #45a049;
 }
 
 #result {
     margin-top: 20px;
     padding: 10px;
-    border: 1px solid var(--light-grey);
-    background-color: var(--light-blue-grey);
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
 }
