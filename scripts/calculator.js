@@ -1,15 +1,16 @@
 var fishData;
 
-fetch('fish-data.json')
+fetch('data/fish-data.json')
     .then(response => response.json())
     .then(data => {
         fishData = data;
     })
     .catch(error => console.error('Error fetching and parsing fish data:', error));
 
-function calculateCapacity(fishType) {
+function calculateCapacity() {
     var damSize = parseFloat(document.getElementById('damSize').value);
     var depth = parseFloat(document.getElementById('depth').value);
+    var fishType = document.getElementById('fishType').value;
 
     var fishTypeData = fishData[fishType];
 
